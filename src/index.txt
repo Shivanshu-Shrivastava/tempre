@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Tenor+Sans&display=swap');
+
+:root {
+  --main: rgb(10, 10, 35);
+  --rose: #181515;
+  --cyanblue: rgba(59, 130, 246, 0.7) !important;
+  --cyanblueho: rgba(59, 130, 246, 0.8) !important;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: rgb(10, 10, 35);
+  /* color: #142b6f; */
+  background-color: beige;
+  /* font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Tenor Sans', sans-serif;   */
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  /* color: var(--mainblue); */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Dashboard UI css start */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.advanced {
+  background-color: #4F77DB;
+  padding: 7px;
+
+  border-radius: 15px;
+  transition: .2s;
+}
+
+.advanced:hover {
+  background-color: #3c6ce6;
+}
+
+.card_for_machine {
+  padding: 12px;
+  background-color: white;
+  border-radius: 16px;
+
+}
+
+hr {
+  margin: unset;
+}
+
+.machineFont {
+  font-size: 14px;
+  color: gray;
+}
+
+.machineFont span {
+  min-inline-size: fit-content;
+
+}
+
+.biggreen {
+  background: #1DDC0C;
+  width: 37px;
+  height: 44px;
+  border-radius: 15px;
+}
+.bigred {
+  background: #FF392D;
+  width: 37px;
+  height: 44px;
+  border-radius: 15px;
+}
+.border-2{
+  min-width: 37px;
+  min-height: 44px;
+
+}
+.border-t-2{
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+  }
+
+}
+
+@media (min-width: 576px) {
+  .col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .border-t-2{
+    border-top: unset;
+  }
+
+  .advanced {
+    padding: 6px 16px 6px 16px;
+
+  }
+
+}
